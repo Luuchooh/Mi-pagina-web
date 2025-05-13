@@ -1,0 +1,108 @@
+body{
+    background-color: rgba(2, 107, 2, 0.791);
+}
+
+h1 {
+    color: rgba(0, 0, 255, 0.632);
+    font-size: 70px;
+    margin: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+footer { text-align: end;
+    text-align: center;
+    color: black;
+    margin: 15%;
+}
+
+nav { 
+    font-size: 120%;
+    margin: 2%;
+    text-align: right;
+
+}
+
+li{ 
+    list-style: none;
+}
+
+.logo{
+    height: 20vh;
+    width: 20vh;
+    border: solid;
+    border-color: black;
+    border-radius: 50%;
+}
+
+h2{
+    color: aliceblue;
+    text-align: center;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: center;
+    padding: 0; 
+}
+
+.navegacion li{
+    margin: 0 30px;
+}
+
+header{
+    display: grid;
+    grid-template-areas:
+    "logo titulo none" ;
+}
+
+.titulo{
+    margin-inline-start: -20%;
+}
+
+.filauno{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.4fr;
+    border: 1px solid;
+    text-align: center;
+    background-color: aliceblue;
+    width: 50vh;
+    margin-inline-start: 1%;
+
+}
+
+.item1{
+    border: 1px solid;
+    padding: 5px;
+}
+
+.item2 {
+    border: 1px solid;
+    padding: 5px;
+}
+
+.item3 {
+    border: 1px solid;
+    padding: 5px;
+}
+
+.item4{
+    display: grid;
+    grid-template-rows: repeat(4, 30px);
+    text-align: center;
+    border: 1px solid;
+    background-color: aliceblue;
+    width: 50vh;
+    margin-inline-start: 40%;
+    align-items: center;
+}
+
+.item5{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: aliceblue;
+    width: 20vh;
+    text-align: center;
+    margin-inline-start: 90%;
+}
