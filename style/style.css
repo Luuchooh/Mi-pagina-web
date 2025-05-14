@@ -14,7 +14,7 @@ h1 {
 footer { text-align: end;
     text-align: center;
     color: black;
-    margin: 15%;
+    margin: 5%;
 }
 
 nav { 
@@ -61,48 +61,78 @@ header{
     margin-inline-start: -20%;
 }
 
-.filauno{
-    display: grid;
-    grid-template-columns: 1fr 1fr 0.4fr;
-    border: 1px solid;
+.contenedor{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.columna{
+    flex: 1;
+    background-color: rgba(2, 107, 2, 0.791);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0,1);
+    min-width: 280px;
+    max-width: 400px;
+}
+
+h2{
     text-align: center;
-    background-color: aliceblue;
-    width: 50vh;
-    margin-inline-start: 1%;
-
+    margin-bottom: 15px;
 }
 
-.item1{
-    border: 1px solid;
-    padding: 5px;
-}
-
-.item2 {
-    border: 1px solid;
-    padding: 5px;
-}
-
-.item3 {
-    border: 1px solid;
-    padding: 5px;
-}
-
-.item4{
+.tabla-posiciones, .tabla-goleadores{
     display: grid;
-    grid-template-rows: repeat(4, 30px);
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
     text-align: center;
-    border: 1px solid;
-    background-color: aliceblue;
-    width: 50vh;
-    margin-inline-start: 40%;
-    align-items: center;
 }
 
-.item5{
-    display: grid;
+.tabla-posiciones{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tabla-goleadores{
     grid-template-columns: 2fr 1fr;
-    background-color: aliceblue;
-    width: 20vh;
+}
+
+.partidos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.partido{
+    padding: 10px;
+    border-radius: 5px;
     text-align: center;
-    margin-inline-start: 90%;
+}
+
+@media (max-width: 900px) {
+    .contenedor{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.tabla-posiciones div, .tabla-goleadores div {
+    padding: 6px;
+    border-bottom: 1px solid #ccc;
+}
+
+.fila{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.video{
+margin-inline-start: 25px;
+    height: 100vh;
+    width: 200vh;
 }
