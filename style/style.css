@@ -41,13 +41,13 @@ h2{
     text-align: center;
 }
 
-.navegacion{
+.nav{
     display: flex;
     justify-content: center;
-    padding: 0; 
+    padding: 30px; 
 }
 
-.navegacion li{
+.nav-item{
     margin: 0 30px;
 }
 
@@ -135,4 +135,35 @@ h2{
 margin-inline-start: 25px;
     height: 90vh;
     width: 190vh;
+}
+
+.discord{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.bienvenido{
+    text-align: center;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lista{
+    text-align: center;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 45px;
+}
+
+.item{
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.cancha{
+    height: 90vh;
+    width: 190vh;
+    margin-inline-start: 60px;
 }
