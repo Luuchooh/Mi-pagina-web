@@ -54,7 +54,7 @@ h2{
 header{
     display: grid;
     grid-template-areas:
-    "logo titulo pelota" ;
+    "logo titulo none" ;
 }
 
 .titulo{
@@ -144,16 +144,24 @@ h2{
 }
 
 .discord:hover{
-    animation: bigger 2s ease;
-    animation-fill-mode: forwards;
+    animation: vibrate 0.5s infinite;
 }
 
-@keyframes bigger {
+@keyframes discord{
     0%{
-        scale: 1;
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(10px);
     }
     100%{
-        scale: 1.5;
+        transform: translateX(0);
     }
 }
 
@@ -180,37 +188,4 @@ h2{
     height: 90vh;
     width: 190vh;
     margin-inline-start: 60px;
-}
-
-.pelota{
-    height: 100px;
-    width: 100px;
-    margin-inline-start: 470px;
-    margin-top: -200px;
-    animation: vibrate 0.5s infinite;
-}
-
-@keyframes vibrate{
-    0% {
-        transform: translateY(0px);
-    }
-    25% {
-        transform: translateY(10px);
-    }
-    50% {
-        transform: translateY(0px);
-    }
-    75% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@media (max-width 425px){
-    .titulo{
-        font-size: 16px;
-        padding: 20px;
-    }
 }

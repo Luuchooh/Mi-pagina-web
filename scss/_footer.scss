@@ -1,0 +1,16 @@
+footer { text-align: end;
+    text-align: center;
+    color: black;
+    margin: 5%;
+    .discord{
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+    }
+    @include mobile{
+        margin-top: 10px;
+        height: 15vh;
+        width: auto;
+    }
+}
+
