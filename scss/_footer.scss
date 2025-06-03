@@ -5,12 +5,6 @@ footer { text-align: end;
     .discord{
         position: fixed;
         bottom: 50px;
-        right: 50px;
-    }
-    @include mobile{
-        margin-top: 10px;
-        height: 15vh;
-        width: auto;
-    }
+        right: 50px; 
+        }
 }
-

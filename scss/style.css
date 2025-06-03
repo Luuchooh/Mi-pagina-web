@@ -1,191 +1,184 @@
-body{
-    background-color: rgba(2, 107, 2, 0.791);
+.tabla-posiciones, .tabla-goleadores {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  text-align: center;
 }
 
-h1 {
-    color: rgba(0, 0, 255, 0.632);
-    font-size: 70px;
-    margin: 30px;
-    text-align: center;
-    text-decoration: underline;
-}
-
-
-footer { text-align: end;
-    text-align: center;
-    color: black;
-    margin: 5%;
-}
-
-nav { 
-    font-size: 120%;
-    margin: 2%;
-    text-align: right;
-
-}
-
-li{ 
-    list-style: none;
-}
-
-.logo{
-    height: 20vh;
-    width: 20vh;
-    border: solid;
-    border-color: black;
-    border-radius: 50%;
-}
-
-h2{
-    color: aliceblue;
-    text-align: center;
-}
-
-.nav{
-    display: flex;
-    justify-content: center;
-    padding: 30px; 
-}
-
-.nav-item{
-    margin: 0 30px;
-}
-
-header{
-    display: grid;
-    grid-template-areas:
-    "logo titulo none" ;
-}
-
-.titulo{
-    margin-inline-start: -20%;
-}
-
-.contenedor{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.columna{
-    flex: 1;
-    background-color: rgba(2, 107, 2, 0.791);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0,1);
-    min-width: 280px;
-    max-width: 400px;
-}
-
-h2{
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.tabla-posiciones, .tabla-goleadores{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    text-align: center;
-}
-
-.tabla-posiciones{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.tabla-goleadores{
-    grid-template-columns: 2fr 1fr;
-}
-
-.partidos{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.partido{
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-@media (max-width: 425px) {
-    .contenedor{
-        flex-direction: column;
-        align-items: center;
-    }
+.tabla-posiciones {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .tabla-posiciones div, .tabla-goleadores div {
-    padding: 6px;
-    border-bottom: 1px solid #ccc;
+  padding: 6px;
+  border-bottom: 1px solid #ccc;
 }
 
-.fila{
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-    border-radius: 4px;
+.bienvenido {
+  text-align: center;
+  font-size: x-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.video{
-    margin-inline-start: auto;
-    height: 90vh;
-    width: 190vh;
-} 
-
-.discord{
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
+body {
+  background-color: rgba(2, 107, 2, 0.791);
 }
 
-.discord:hover{
-    animation: vibrate 0.5s infinite;
+li {
+  list-style: none;
 }
 
-@keyframes discord{
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(10px);
-    }
-    50%{
-        transform: translateX(0);
-    }
-    75%{
-        transform: translateX(10px);
-    }
-    100%{
-        transform: translateX(0);
-    }
+@media (max-width: 425px) {
+  .titulo {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+.lista {
+  text-align: center;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  padding: 45px;
+}
+.lista .item {
+  padding: 5px;
+  align-items: center;
+  text-align: center;
 }
 
-.bienvenido{
-    text-align: center;
-    font-size: x-large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.nav-item {
+  margin: 0 30px;
+}
+.nav-item .nav {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
-.lista{
-    text-align: center;
-    font-size: large;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 45px;
+.cancha {
+  height: 90vh;
+  width: 190vh;
+  margin-inline-start: 60px;
 }
 
-.item{
-    padding: 5px;
-    align-items: center;
-    text-align: center;
+header {
+  display: grid;
+  grid-template-areas: "logo titulo none";
+}
+header .logo {
+  height: 20vh;
+  width: 20vh;
+  border: solid;
+  border-color: black;
+  border-radius: 50%;
+}
+header .titulo {
+  margin-inline-start: -20%;
 }
 
-.cancha{
-    height: 90vh;
-    width: 190vh;
-    margin-inline-start: 60px;
+h1 {
+  color: rgba(0, 0, 255, 0.632);
+  font-size: 70px;
+  margin: 30px;
+  text-align: center;
+  text-decoration: underline;
 }
+h1 .pelota {
+  height: 100px;
+  width: 100px;
+  margin-inline-start: 470px;
+  margin-top: -200px;
+  animation: vibrate 0.5s infinite;
+}
+@keyframes vibrate {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.main h2 {
+  color: aliceblue;
+  text-align: center;
+}
+.main .cancha {
+  height: 90vh;
+  width: 190vh;
+  margin-inline-start: 60px;
+}
+.main .video {
+  margin-inline-start: auto;
+  height: 90vh;
+  width: 190vh;
+}
+.main .contenedor {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main .contenedor .columna {
+  flex: 1;
+  background-color: rgba(2, 107, 2, 0.791);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px;
+  min-width: 280px;
+  max-width: 400px;
+}
+.main .contenedor .columna .fila {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 4px;
+}
+.main .contenedor .columna .fila .partidos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .contenedor .columna .fila .partido {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.main .contenedor .columna .fila .tabla-goleadores {
+  grid-template-columns: 2fr 1fr;
+}
+
+.laredonda {
+  color: aliceblue;
+  text-align: center;
+}
+
+.nav, nav-pills {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  text-align: end;
+  text-align: center;
+  color: black;
+  margin: 5%;
+}
+footer .discord {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

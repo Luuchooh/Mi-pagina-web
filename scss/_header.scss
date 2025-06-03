@@ -2,31 +2,46 @@ header{
     display: grid;
     grid-template-areas:
     "logo titulo none" ;
+        .logo{
+            height: 20vh;
+            width: 20vh;
+            border: solid;
+            border-color: black;
+            border-radius: 50%;
+        }
+
+    .titulo{
+        margin-inline-start: -20%;
+        }
+    }
     h1 {
         color: rgba(0, 0, 255, 0.632);
         font-size: 70px;
         margin: 30px;
         text-align: center;
         text-decoration: underline;
-    }
-    .logo{
-        height: 20vh;
-        width: 20vh;
-        border: solid;
-        border-color: black;
-        border-radius: 50%;
-    }
-    @include mobile{
-        margin-top: 10px;
-        .logo{
-            height: 15vh;
-            width: auto;
+        .pelota{
+            height: 100px;
+            width: 100px;
+            margin-inline-start: 470px;
+            margin-top: -200px;
+            animation: vibrate 0.5s infinite;
         }
-        h1{
-            display: none;
-        }
-    }
-    .titulo{
-        margin-inline-start: -20%;
+        @keyframes vibrate {
+            0% {
+            transform: translateY(0px);
+            }
+            25% {
+            transform: translateY(10px);
+            }
+            50% {
+            transform: translateY(0px);
+            }
+            75% {
+            transform: translateY(10px);
+            }
+            100% {
+            transform: translateY(0px);
+            }
     }
 }
