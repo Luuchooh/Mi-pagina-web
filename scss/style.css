@@ -42,7 +42,7 @@ li {
   font-family: "Times New Roman", Times, serif;
   padding: 45px;
 }
-.lista .item {
+.item {
   padding: 5px;
   align-items: center;
   text-align: center;
@@ -50,11 +50,7 @@ li {
 
 .nav-item {
   margin: 0 30px;
-}
-.nav-item .nav {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
+
 }
 
 .cancha {
@@ -110,27 +106,18 @@ h1 .pelota {
   }
 }
 
-.main h2 {
-  color: aliceblue;
-  text-align: center;
-}
-.main .cancha {
-  height: 90vh;
-  width: 190vh;
-  margin-inline-start: 60px;
-}
-.main .video {
+.video {
   margin-inline-start: auto;
   height: 90vh;
   width: 190vh;
 }
-.main .contenedor {
+.contenedor {
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
-.main .contenedor .columna {
+.columna {
   flex: 1;
   background-color: rgba(2, 107, 2, 0.791);
   padding: 15px;
@@ -139,23 +126,23 @@ h1 .pelota {
   min-width: 280px;
   max-width: 400px;
 }
-.main .contenedor .columna .fila {
+.fila {
   display: flex;
   justify-content: space-between;
   padding: 8px;
   border-radius: 4px;
 }
-.main .contenedor .columna .fila .partidos {
+.partidos {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.main .contenedor .columna .fila .partido {
+.partido {
   padding: 10px;
   border-radius: 5px;
   text-align: center;
 }
-.main .contenedor .columna .fila .tabla-goleadores {
+.tabla-goleadores {
   grid-template-columns: 2fr 1fr;
 }
 
@@ -173,7 +160,7 @@ footer {
   text-align: end;
   text-align: center;
   color: black;
-  margin: 5%;
+  margin: 10%;
 }
 footer .discord {
   position: fixed;
